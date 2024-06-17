@@ -1,0 +1,139 @@
+@media screen and (min-width: 1200px) {
+  main {
+    max-width: 1200px;
+  }
+
+  .hero {
+    min-width: 1000px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    gap: 0;
+  }
+
+  .header-title{
+    padding: 10px;
+  }
+
+  .header-nav {
+    padding: 10px;
+  }
+
+  .hero-title {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .hero-p {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .hero-section {
+    padding-top: 0;
+  }
+  
+  .resto-detail, .resto-catalog {
+    margin-top: 0;
+  }
+
+  .form {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .hero-inner {
+    width: 80%;
+  }
+
+  .header-nav {
+    position: absolute;
+    z-index: 10;
+    width: 150px;
+    background-color: #3E3232;
+    border-radius: 10px;
+    padding: 0;
+    top: 155px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-500px);
+    transition: transform 0.5s ease; 
+  }
+
+  .header-nav.open {
+    transform: translateX(-50%) translateY(0);
+  }
+
+  .header-nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .header-nav ul li a {
+    color: #FFF8EA;
+  }
+
+  .header-nav ul li a:hover {
+    color: #3E3232;
+    padding: 10px;
+    background: #FFF8EA;
+  }
+
+  .header-nav-item {
+    display: list-item;
+    border: 1px solid #FFF8EA;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  input[type=text], textarea {
+    min-width: 0;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .restaurant-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .restaurant-image {
+    align-self: center;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .header-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .post, .reviews-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .post {
+    grid-template-columns: 1fr;
+  }
+
+  .reviews-list {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+}
